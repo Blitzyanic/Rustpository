@@ -6,7 +6,7 @@ pub fn ownership() {
     // point to s no ownership
     let sp: &str = &s;
 
-    // clone sc s sc have ownership && sp are no longer existant
+    // clone s, sc have ownership && sp/s are no longer existant
     // let sc: String = s.clone();
 
     // same as clone ownership by fs2 ( s2 -> ps -> fs2 )
@@ -15,15 +15,15 @@ pub fn ownership() {
     // point to s no ownership s is still avaidable
     point(&s);
 
-    print!("{}, {}, {}", s, sp, fs2);
+    println!("{}, {}, {}", s, sp, fs2);
 }
 
 fn test_ownership(ps: String) -> String {
-    print!("{}f", ps);
+    println!("{}f", ps);
 
     return ps;
 }
 
 fn point(fsp: &String) {
-    print!("{}", fsp);
+    println!("{}", fsp);
 }
