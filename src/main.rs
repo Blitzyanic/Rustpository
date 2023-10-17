@@ -1,6 +1,6 @@
-mod ownership;
+mod structs;
 
 fn main() {
-    ownership::ownership();     
+    structs::structs();
 }
     
