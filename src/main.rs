@@ -1,6 +1,6 @@
-mod structs;
+mod enums;
 
 fn main() {
-    structs::structs();
+    enums::enums();
 }
     
